@@ -6,6 +6,8 @@
 
   --color-theme: #1098ad;
   --color-accent: #ffa94d;
+  --color-rightAnswered: #79ac78;
+  --color-wrongAnswered: #ed7b7b;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
@@ -126,11 +128,11 @@ progress {
   cursor: pointer;
   border-radius: 100px;
   transition: 0.3s;
-  margin: 1rem 0;
 }
 
 .btn:not([disabled]):hover {
   background-color: var(--color-darkest);
+  color: var(--color-light);
 }
 
 .btn-option:not([disabled]):hover {
@@ -158,13 +160,13 @@ progress {
 }
 
 .btn-option.correct {
-  background-color: var(--color-theme);
-  border: 2px solid var(--color-theme);
+  background-color: var(--color-rightAnswered);
+  border: 2px solid var(--color-rightAnswered);
   color: var(--color-light);
 }
 .btn-option.wrong {
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  background-color: var(--color-wrongAnswered);
+  border: 2px solid var(--color-wrongAnswered);
   color: var(--color-darkest);
 }
 
