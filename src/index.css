@@ -126,6 +126,7 @@ progress {
   cursor: pointer;
   border-radius: 100px;
   transition: 0.3s;
+  margin: 1rem 0;
 }
 
 .btn:not([disabled]):hover {
